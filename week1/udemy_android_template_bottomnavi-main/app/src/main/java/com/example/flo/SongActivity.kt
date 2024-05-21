@@ -1,17 +1,22 @@
 package com.example.flo
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.flo.databinding.ActivitySongBinding
+import com.google.gson.Gson
 
 class SongActivity :AppCompatActivity() {
 
     lateinit var binding : ActivitySongBinding //lateinit은 선언은 지금 하고 초기화는 나중에 한다
     lateinit var song : Song
     lateinit var timer : Timer
+    private var mediaPlayer : MediaPlayer? = null // ?는 null이 들어올 수 있다는 뜻
+    private var gson : Gson = Gson() // onPause의 앱 종료할 때 노래 정보를 저장하기 위함
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySongBinding.inflate(layoutInflater) // 설정
@@ -33,9 +38,24 @@ class SongActivity :AppCompatActivity() {
 
     }
 
+    override fun onPause() { // 포커스 잃으면
+        super.onPause()
+        setPlayerStatus(false) // 음악 중단
+        song.second = ((binding.songProgressbarSb.progress * song.playTime)/100)/1000
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        // sharedPreferences는 내부저장소에 저장해서 껐다켜도 남는다
+        val editor = sharedPreferences.edit() // 저장된 값 사용하려면 editor 필요
+        val songJson = gson.toJson(song) // song 객체를 Json 객체로 넣어준다
+        editor.putString("songData", songJson) // GIT에서 commit 역할
+
+        editor.apply() // GIT에서 push 역할
+    }
+
     override fun onDestroy() { // 앱이 꺼질 때 실행되는 함수. try-catch문 테스트 하려고 씀
         super.onDestroy()
         timer.interrupt()
+        mediaPlayer?.release() // mediaPlayer가 가지고 있던 resource 해제
+        mediaPlayer = null // mediaPlayer 해제
     }
 
     private fun initSong(){ // 4주차 내용
@@ -45,7 +65,8 @@ class SongActivity :AppCompatActivity() {
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second", 0),
                 intent.getIntExtra("playTime",0),
-                intent.getBooleanExtra("isPlaying", false)
+                intent.getBooleanExtra("isPlaying", false),
+                intent.getStringExtra("music")!!,
             )
         }
         startTimer()
@@ -58,6 +79,8 @@ class SongActivity :AppCompatActivity() {
         binding.songEndTimeTv.text = String.format("%02d:%02d", song.playTime / 60, song.playTime%60)
         binding.songProgressbarSb.progress = (song.second * 1000 / song.playTime)
 
+        val music = resources.getIdentifier(song.music, "raw", this.packageName) // 5주차 내용, music 이름과 같은 mp3 파일을 찾는다
+        mediaPlayer = MediaPlayer.create(this, music) // mediaplayer에서 이 음악을 재생할거야
         setPlayerStatus(song.isPlaying)
     }
 
@@ -68,10 +91,14 @@ class SongActivity :AppCompatActivity() {
         if(isPlaying){ // 실행중이면
             binding.songPlayIv.visibility = View.GONE // 재생 버튼 숨기기
             binding.songPauseIv.visibility = View.VISIBLE // 일시정지 버튼 보이기
+            mediaPlayer?.start() // mediaplayer 실행
         }
         else{ // 일시정지 되면
             binding.songPlayIv.visibility = View.VISIBLE // 재생 버튼 보이기
             binding.songPauseIv.visibility = View.GONE // 일시정지 버튼 숨기기
+            if(mediaPlayer?.isPlaying == true){ // 재생중이 아닌데 pause하면 오류난다
+                mediaPlayer?.pause()
+            }
         }
     }
 
