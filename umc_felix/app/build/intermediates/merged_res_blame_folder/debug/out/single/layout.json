@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_pannel_background.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_pannel_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_banner.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_song.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\activity_song.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker_song_file.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_locker_song_file.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_locker.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_album.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_album.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_song.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_song.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_locker_song.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_locker_song.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_locker_album.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\item_locker_album.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_look.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_look.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_video.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\fragment_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_album.xml",
+        "source": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\src\\main\\res\\layout\\item_album.xml"
+    }
+]

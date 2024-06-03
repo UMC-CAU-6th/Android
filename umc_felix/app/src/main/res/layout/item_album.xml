@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_album_cover_img_cv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/item_album_cover_img_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lilac"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/item_album_play_img_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/widget_black_play"
+        app:layout_constraintBottom_toBottomOf="@id/item_album_cover_img_cv"
+        app:layout_constraintEnd_toEndOf="@id/item_album_cover_img_cv"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/item_album_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LILAC"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/item_album_cover_img_cv"
+        app:layout_constraintStart_toStartOf="@id/item_album_cover_img_cv"/>
+
+    <TextView
+        android:id="@+id/item_album_singer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이유(IU)"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/item_album_title_tv"
+        app:layout_constraintStart_toStartOf="@id/item_album_title_tv"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<HorizontalScrollView 전에 썼던 호리즌탈 뷰. 코드 더러워져서 여기로 갖고옴.
+                    android:id="@+id/td_ms_hsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/td_ms_tv">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+                        <LinearLayout
+                            android:id="@+id/td_ms_first_ll"
+                            android:tag="album"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/td_ms_first_album_img"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/lilac" />
+
+                            <TextView
+                                android:id="@+id/td_ms_first_album_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="LILAC"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/td_ms_first_album_singer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아이유"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        //두번째 앨범 리니어 레이아웃
+
+                        <LinearLayout
+                            android:id="@+id/td_ms_second_ll"
+                            android:tag="album"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/td_ms_first_ll"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/td_ms_second_album_img"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/img_album_exp3" />
+
+                            <TextView
+                                android:id="@+id/td_ms_second_album_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="LOUD"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/td_ms_second_album_singer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="가수미상"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        //세번째 앨범 리니어 레이아웃
+
+                        <LinearLayout
+                            android:id="@+id/td_ms_third_ll"
+                            android:tag="album"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/td_ms_second_ll"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/td_ms_third_album_img"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/img_album_exp4" />
+
+                            <TextView
+                                android:id="@+id/td_ms_third_album_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="COME TOGETHER"
+                                android:textColor="@color/black"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/td_ms_third_album_singer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BEATLES"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </HorizontalScrollView>-->

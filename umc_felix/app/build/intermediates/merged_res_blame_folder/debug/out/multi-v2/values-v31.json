@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ws637\\AndroidStudioProjects\\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v31\\values-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ws637\\.gradle\\caches\\transforms-3\\8506efd20275e25dd1a8b440365a07cf\\transformed\\jetified-core-splashscreen-1.0.1\\res\\values-v31\\values-v31.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,473",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "468,697"
+                    }
+                }
+            ]
+        }
+    ]
+}
