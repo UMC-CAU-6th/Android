@@ -16,7 +16,7 @@ class SongFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSongBinding.inflate(inflater, container, false)
+        binding = FragmentSongBinding.inflate(inflater,container,false)
 
         return binding.root
     }
