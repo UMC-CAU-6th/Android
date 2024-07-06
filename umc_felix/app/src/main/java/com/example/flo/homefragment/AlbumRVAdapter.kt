@@ -3,7 +3,7 @@ package com.example.flo.homefragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.flo.Album
+import com.example.flo.database.Album
 import com.example.flo.databinding.ItemAlbumBinding
 
 class AlbumRVAdapter(private val albumList: ArrayList<Album>): RecyclerView.Adapter<AlbumRVAdapter.ViewHolder>() {
@@ -52,7 +52,7 @@ class AlbumRVAdapter(private val albumList: ArrayList<Album>): RecyclerView.Adap
     override fun getItemCount(): Int = albumList.size
 
     inner class ViewHolder(val binding: ItemAlbumBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(album:Album){
+        fun bind(album: Album){
             binding.itemAlbumTitleTv.text = album.title
             binding.itemAlbumSingerTv.text = album.singer
             binding.itemAlbumCoverImgIv.setImageResource(album.coverImg!!)

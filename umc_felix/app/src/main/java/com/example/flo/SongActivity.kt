@@ -11,9 +11,10 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.flo.database.Song
+import com.example.flo.database.SongDatabase
 import com.example.flo.databinding.ActivitySongBinding
 import com.google.gson.Gson
-import java.io.IOException
 
 
 class SongActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class SongActivity : AppCompatActivity() {
 
     //7주차
     val songs = arrayListOf<Song>()
-    lateinit var songDB:SongDatabase
+    lateinit var songDB: SongDatabase
     var nowPos = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {//activity가 새롭게 생성될 떄, 무조건 실행시켜줘야 하는 함수

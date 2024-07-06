@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\ws637\.gradle\caches\transforms-3\0254fbd46e7fb1e17f54710c015f138e\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-ktx:2.4.1] C:\Users\ws637\.gradle\caches\transforms-3\a94f939a9d04d65ad404d8e0fecacf32\transformed\jetified-room-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\ws637\.gradle\caches\transforms-3\22e97ecc3928b6d06f05f33a92b91d9a\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
@@ -51,29 +51,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ws637\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ws637\.gradle\caches\transforms-3\166063093989818123d5c56ba9bda3ec\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ws637\.gradle\caches\transforms-3\822cc50838ca8d077b38751e83e2f58b\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ws637\.gradle\caches\transforms-3\4c3acc754dede834d7fe837f2f3daf58\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:5:5-77
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:5:22-74
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:7:5-31:19
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:7:5-37:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\ws637\.gradle\caches\transforms-3\e1db18e734f7415267202af6f87d4794\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\ws637\.gradle\caches\transforms-3\e1db18e734f7415267202af6f87d4794\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\ws637\.gradle\caches\transforms-3\c4ed899cc079ee90601aa2571904cd82\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -93,51 +93,63 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ws637\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\ws637\.gradle\caches\transforms-3\e1311b14947588803b4480743eb14b59\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:13:9-41
 service#com.example.flo.ForeGround
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:14:9-17:47
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:14:9-17:47
 	android:enabled
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:16:13-35
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:16:13-35
 	android:exported
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:15:13-39
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:15:13-39
 activity#com.example.flo.MainActivity
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:19:9-27:20
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:19:9-27:20
 	android:exported
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:21:13-36
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:25:27-74
 activity#com.example.flo.SongActivity
-ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:28:9-30:39
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:28:9-30:39
 	android:exported
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:29:13-41
+activity#com.example.flo.forLogin.LoginActivity
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:31:9-33:39
+	android:exported
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:32:13-51
+activity#com.example.flo.forLogin.SignUpActivity
+ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:34:9-36:39
+	android:exported
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:36:13-36
+	android:name
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml:35:13-52
 uses-sdk
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\ws637\.gradle\caches\transforms-3\0254fbd46e7fb1e17f54710c015f138e\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\ws637\.gradle\caches\transforms-3\0254fbd46e7fb1e17f54710c015f138e\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-ktx:2.4.1] C:\Users\ws637\.gradle\caches\transforms-3\a94f939a9d04d65ad404d8e0fecacf32\transformed\jetified-room-ktx-2.4.1\AndroidManifest.xml:20:5-22:41
@@ -232,16 +244,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ws637\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\ws637\.gradle\caches\transforms-3\822cc50838ca8d077b38751e83e2f58b\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ws637\.gradle\caches\transforms-3\4c3acc754dede834d7fe837f2f3daf58\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ws637\.gradle\caches\transforms-3\4c3acc754dede834d7fe837f2f3daf58\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ws637\AndroidStudioProjects\udemy_android_flo-03ee0424ee59652d099171e552c1d9281259fcc5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ws637\AndroidStudioProjects\umcWork\umc_felix\app\src\main\AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.4.1] C:\Users\ws637\.gradle\caches\transforms-3\1bb2809b88f6e1f29fe7af401122fa3f\transformed\room-runtime-2.4.1\AndroidManifest.xml:25:9-28:40
 	android:exported

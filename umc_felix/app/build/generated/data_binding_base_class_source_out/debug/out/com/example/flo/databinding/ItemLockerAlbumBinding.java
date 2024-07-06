@@ -22,39 +22,39 @@ public final class ItemLockerAlbumBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final CardView itemLockerAlbumImgCv;
+  public final CardView itemAlbumImgCardView;
 
   @NonNull
-  public final ImageView itemLockerAlbumImgIv;
+  public final ImageView itemAlbumImgIv;
 
   @NonNull
-  public final ImageView itemLockerAlbumLikeImgIv;
+  public final ImageView itemAlbumMoreIv;
 
   @NonNull
-  public final ImageView itemLockerAlbumMoreImgIv;
+  public final TextView itemAlbumMusicTitleInfoTv;
 
   @NonNull
-  public final ImageView itemLockerAlbumPlayImgIv;
+  public final ImageView itemAlbumPlayIv;
 
   @NonNull
-  public final TextView itemLockerAlbumSingerTv;
+  public final TextView itemAlbumSingerTv;
 
   @NonNull
-  public final TextView itemLockerAlbumTitleTv;
+  public final TextView itemAlbumTitleTv;
 
   private ItemLockerAlbumBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CardView itemLockerAlbumImgCv, @NonNull ImageView itemLockerAlbumImgIv,
-      @NonNull ImageView itemLockerAlbumLikeImgIv, @NonNull ImageView itemLockerAlbumMoreImgIv,
-      @NonNull ImageView itemLockerAlbumPlayImgIv, @NonNull TextView itemLockerAlbumSingerTv,
-      @NonNull TextView itemLockerAlbumTitleTv) {
+      @NonNull CardView itemAlbumImgCardView, @NonNull ImageView itemAlbumImgIv,
+      @NonNull ImageView itemAlbumMoreIv, @NonNull TextView itemAlbumMusicTitleInfoTv,
+      @NonNull ImageView itemAlbumPlayIv, @NonNull TextView itemAlbumSingerTv,
+      @NonNull TextView itemAlbumTitleTv) {
     this.rootView = rootView;
-    this.itemLockerAlbumImgCv = itemLockerAlbumImgCv;
-    this.itemLockerAlbumImgIv = itemLockerAlbumImgIv;
-    this.itemLockerAlbumLikeImgIv = itemLockerAlbumLikeImgIv;
-    this.itemLockerAlbumMoreImgIv = itemLockerAlbumMoreImgIv;
-    this.itemLockerAlbumPlayImgIv = itemLockerAlbumPlayImgIv;
-    this.itemLockerAlbumSingerTv = itemLockerAlbumSingerTv;
-    this.itemLockerAlbumTitleTv = itemLockerAlbumTitleTv;
+    this.itemAlbumImgCardView = itemAlbumImgCardView;
+    this.itemAlbumImgIv = itemAlbumImgIv;
+    this.itemAlbumMoreIv = itemAlbumMoreIv;
+    this.itemAlbumMusicTitleInfoTv = itemAlbumMusicTitleInfoTv;
+    this.itemAlbumPlayIv = itemAlbumPlayIv;
+    this.itemAlbumSingerTv = itemAlbumSingerTv;
+    this.itemAlbumTitleTv = itemAlbumTitleTv;
   }
 
   @Override
@@ -84,51 +84,51 @@ public final class ItemLockerAlbumBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.item_locker_album_img_cv;
-      CardView itemLockerAlbumImgCv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumImgCv == null) {
+      id = R.id.item_album_img_cardView;
+      CardView itemAlbumImgCardView = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumImgCardView == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_img_iv;
-      ImageView itemLockerAlbumImgIv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumImgIv == null) {
+      id = R.id.item_album_img_iv;
+      ImageView itemAlbumImgIv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumImgIv == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_like_img_iv;
-      ImageView itemLockerAlbumLikeImgIv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumLikeImgIv == null) {
+      id = R.id.item_album_more_iv;
+      ImageView itemAlbumMoreIv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumMoreIv == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_more_img_iv;
-      ImageView itemLockerAlbumMoreImgIv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumMoreImgIv == null) {
+      id = R.id.item_album_music_title_info_tv;
+      TextView itemAlbumMusicTitleInfoTv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumMusicTitleInfoTv == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_play_img_iv;
-      ImageView itemLockerAlbumPlayImgIv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumPlayImgIv == null) {
+      id = R.id.item_album_play_iv;
+      ImageView itemAlbumPlayIv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumPlayIv == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_singer_tv;
-      TextView itemLockerAlbumSingerTv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumSingerTv == null) {
+      id = R.id.item_album_singer_tv;
+      TextView itemAlbumSingerTv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumSingerTv == null) {
         break missingId;
       }
 
-      id = R.id.item_locker_album_title_tv;
-      TextView itemLockerAlbumTitleTv = ViewBindings.findChildViewById(rootView, id);
-      if (itemLockerAlbumTitleTv == null) {
+      id = R.id.item_album_title_tv;
+      TextView itemAlbumTitleTv = ViewBindings.findChildViewById(rootView, id);
+      if (itemAlbumTitleTv == null) {
         break missingId;
       }
 
-      return new ItemLockerAlbumBinding((ConstraintLayout) rootView, itemLockerAlbumImgCv,
-          itemLockerAlbumImgIv, itemLockerAlbumLikeImgIv, itemLockerAlbumMoreImgIv,
-          itemLockerAlbumPlayImgIv, itemLockerAlbumSingerTv, itemLockerAlbumTitleTv);
+      return new ItemLockerAlbumBinding((ConstraintLayout) rootView, itemAlbumImgCardView,
+          itemAlbumImgIv, itemAlbumMoreIv, itemAlbumMusicTitleInfoTv, itemAlbumPlayIv,
+          itemAlbumSingerTv, itemAlbumTitleTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

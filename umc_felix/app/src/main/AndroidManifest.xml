@@ -28,6 +28,12 @@
         <activity
             android:name=".SongActivity"
             android:exported="true" />
+        <activity
+            android:name=".forLogin.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".forLogin.SignUpActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

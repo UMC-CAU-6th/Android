@@ -2,6 +2,8 @@ package com.example.flo
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.flo.notUse.DetailFragment
+import com.example.flo.notUse.VideoFragment
 
 class AlbumVPAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = 3
@@ -11,7 +13,7 @@ class AlbumVPAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
         return when(position){
             0->SongFragment()
             1 -> DetailFragment()
-            else ->VideoFragment()
+            else -> VideoFragment()
         }
     }
     //when은 switch 역할

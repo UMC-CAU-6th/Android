@@ -2,15 +2,15 @@ package com.example.flo;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\u0018\u00002\u00020\u0001:\u0001=B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010$\u001a\u00020\u000e2\u0006\u0010%\u001a\u00020\u000eH\u0002J\b\u0010&\u001a\u00020\'H\u0002J\b\u0010(\u001a\u00020\'H\u0002J\b\u0010)\u001a\u00020\'H\u0002J\u0010\u0010*\u001a\u00020\'2\u0006\u0010+\u001a\u00020\u000eH\u0002J\u0012\u0010,\u001a\u00020\'2\b\u0010-\u001a\u0004\u0018\u00010.H\u0014J\b\u0010/\u001a\u00020\'H\u0014J\b\u00100\u001a\u00020\'H\u0014J\b\u00101\u001a\u00020\'H\u0002J\u000e\u00102\u001a\u00020\'2\u0006\u00103\u001a\u000204J\u0010\u00105\u001a\u00020\'2\u0006\u00106\u001a\u000207H\u0002J\u0010\u00108\u001a\u00020\'2\u0006\u00109\u001a\u00020\u001bH\u0002J\u0010\u0010:\u001a\u00020\'2\u0006\u0010;\u001a\u000207H\u0002J\b\u0010<\u001a\u00020\'H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u0014X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u0017\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u001e\u0010\u001e\u001a\u00060\u001fR\u00020\u0000X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#\u00a8\u0006>"}, d2 = {"Lcom/example/flo/SongActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "binding", "Lcom/example/flo/databinding/ActivitySongBinding;", "getBinding", "()Lcom/example/flo/databinding/ActivitySongBinding;", "setBinding", "(Lcom/example/flo/databinding/ActivitySongBinding;)V", "gson", "Lcom/google/gson/Gson;", "mediaplayer", "Landroid/media/MediaPlayer;", "nowPos", "", "getNowPos", "()I", "setNowPos", "(I)V", "songDB", "Lcom/example/flo/SongDatabase;", "getSongDB", "()Lcom/example/flo/SongDatabase;", "setSongDB", "(Lcom/example/flo/SongDatabase;)V", "songs", "Ljava/util/ArrayList;", "Lcom/example/flo/Song;", "getSongs", "()Ljava/util/ArrayList;", "timer", "Lcom/example/flo/SongActivity$Timer;", "getTimer", "()Lcom/example/flo/SongActivity$Timer;", "setTimer", "(Lcom/example/flo/SongActivity$Timer;)V", "getPlayingSongPosition", "songId", "initClickListener", "", "initPlayList", "initSong", "moveSong", "direct", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onDestroy", "onPause", "resetPlayer", "setButtonColor", "btn", "Landroid/widget/ImageView;", "setLike", "isLike", "", "setPlayer", "song", "setPlayerStatus", "isPlaying", "startTimer", "Timer", "app_debug"})
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\u0018\u00002\u00020\u0001:\u0001=B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010$\u001a\u00020\u000e2\u0006\u0010%\u001a\u00020\u000eH\u0002J\b\u0010&\u001a\u00020\'H\u0002J\b\u0010(\u001a\u00020\'H\u0002J\b\u0010)\u001a\u00020\'H\u0002J\u0010\u0010*\u001a\u00020\'2\u0006\u0010+\u001a\u00020\u000eH\u0002J\u0012\u0010,\u001a\u00020\'2\b\u0010-\u001a\u0004\u0018\u00010.H\u0014J\b\u0010/\u001a\u00020\'H\u0014J\b\u00100\u001a\u00020\'H\u0014J\b\u00101\u001a\u00020\'H\u0002J\u000e\u00102\u001a\u00020\'2\u0006\u00103\u001a\u000204J\u0010\u00105\u001a\u00020\'2\u0006\u00106\u001a\u000207H\u0002J\u0010\u00108\u001a\u00020\'2\u0006\u00109\u001a\u00020\u001bH\u0002J\u0010\u0010:\u001a\u00020\'2\u0006\u0010;\u001a\u000207H\u0002J\b\u0010<\u001a\u00020\'H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u0014X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u0017\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u001e\u0010\u001e\u001a\u00060\u001fR\u00020\u0000X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#\u00a8\u0006>"}, d2 = {"Lcom/example/flo/SongActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "binding", "Lcom/example/flo/databinding/ActivitySongBinding;", "getBinding", "()Lcom/example/flo/databinding/ActivitySongBinding;", "setBinding", "(Lcom/example/flo/databinding/ActivitySongBinding;)V", "gson", "Lcom/google/gson/Gson;", "mediaplayer", "Landroid/media/MediaPlayer;", "nowPos", "", "getNowPos", "()I", "setNowPos", "(I)V", "songDB", "Lcom/example/flo/database/SongDatabase;", "getSongDB", "()Lcom/example/flo/database/SongDatabase;", "setSongDB", "(Lcom/example/flo/database/SongDatabase;)V", "songs", "Ljava/util/ArrayList;", "Lcom/example/flo/database/Song;", "getSongs", "()Ljava/util/ArrayList;", "timer", "Lcom/example/flo/SongActivity$Timer;", "getTimer", "()Lcom/example/flo/SongActivity$Timer;", "setTimer", "(Lcom/example/flo/SongActivity$Timer;)V", "getPlayingSongPosition", "songId", "initClickListener", "", "initPlayList", "initSong", "moveSong", "direct", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onDestroy", "onPause", "resetPlayer", "setButtonColor", "btn", "Landroid/widget/ImageView;", "setLike", "isLike", "", "setPlayer", "song", "setPlayerStatus", "isPlaying", "startTimer", "Timer", "app_debug"})
 public final class SongActivity extends androidx.appcompat.app.AppCompatActivity {
     public com.example.flo.databinding.ActivitySongBinding binding;
     public com.example.flo.SongActivity.Timer timer;
     private android.media.MediaPlayer mediaplayer;
     private com.google.gson.Gson gson;
     @org.jetbrains.annotations.NotNull
-    private final java.util.ArrayList<com.example.flo.Song> songs = null;
-    public com.example.flo.SongDatabase songDB;
+    private final java.util.ArrayList<com.example.flo.database.Song> songs = null;
+    public com.example.flo.database.SongDatabase songDB;
     private int nowPos = 0;
     
     public SongActivity() {
@@ -36,17 +36,17 @@ public final class SongActivity extends androidx.appcompat.app.AppCompatActivity
     }
     
     @org.jetbrains.annotations.NotNull
-    public final java.util.ArrayList<com.example.flo.Song> getSongs() {
+    public final java.util.ArrayList<com.example.flo.database.Song> getSongs() {
         return null;
     }
     
     @org.jetbrains.annotations.NotNull
-    public final com.example.flo.SongDatabase getSongDB() {
+    public final com.example.flo.database.SongDatabase getSongDB() {
         return null;
     }
     
     public final void setSongDB(@org.jetbrains.annotations.NotNull
-    com.example.flo.SongDatabase p0) {
+    com.example.flo.database.SongDatabase p0) {
     }
     
     public final int getNowPos() {
@@ -61,7 +61,7 @@ public final class SongActivity extends androidx.appcompat.app.AppCompatActivity
     android.os.Bundle savedInstanceState) {
     }
     
-    private final void setPlayer(com.example.flo.Song song) {
+    private final void setPlayer(com.example.flo.database.Song song) {
     }
     
     private final void setPlayerStatus(boolean isPlaying) {

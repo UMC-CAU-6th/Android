@@ -22,6 +22,9 @@ public final class FragmentLockerBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView lockerLoginTv;
+
+  @NonNull
   public final TabLayout lockerTb;
 
   @NonNull
@@ -30,9 +33,10 @@ public final class FragmentLockerBinding implements ViewBinding {
   @NonNull
   public final ViewPager2 lockerVp;
 
-  private FragmentLockerBinding(@NonNull ConstraintLayout rootView, @NonNull TabLayout lockerTb,
-      @NonNull TextView lockerTv, @NonNull ViewPager2 lockerVp) {
+  private FragmentLockerBinding(@NonNull ConstraintLayout rootView, @NonNull TextView lockerLoginTv,
+      @NonNull TabLayout lockerTb, @NonNull TextView lockerTv, @NonNull ViewPager2 lockerVp) {
     this.rootView = rootView;
+    this.lockerLoginTv = lockerLoginTv;
     this.lockerTb = lockerTb;
     this.lockerTv = lockerTv;
     this.lockerVp = lockerVp;
@@ -65,6 +69,12 @@ public final class FragmentLockerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.locker_login_tv;
+      TextView lockerLoginTv = ViewBindings.findChildViewById(rootView, id);
+      if (lockerLoginTv == null) {
+        break missingId;
+      }
+
       id = R.id.locker_tb;
       TabLayout lockerTb = ViewBindings.findChildViewById(rootView, id);
       if (lockerTb == null) {
@@ -83,7 +93,8 @@ public final class FragmentLockerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLockerBinding((ConstraintLayout) rootView, lockerTb, lockerTv, lockerVp);
+      return new FragmentLockerBinding((ConstraintLayout) rootView, lockerLoginTv, lockerTb,
+          lockerTv, lockerVp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

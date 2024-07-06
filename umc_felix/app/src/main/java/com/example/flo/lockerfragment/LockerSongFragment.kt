@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.flo.R
-import com.example.flo.Song
-import com.example.flo.SongDatabase
+import com.example.flo.database.Song
+import com.example.flo.database.SongDatabase
 import com.example.flo.databinding.FragmentLockerSongBinding
 
 
@@ -17,7 +17,7 @@ import com.example.flo.databinding.FragmentLockerSongBinding
 class LockerSongFragment : Fragment() {
     lateinit var binding: FragmentLockerSongBinding
 
-    lateinit var lockerAlbumRVAdapter: LockerAlbumRVAdapter
+    lateinit var savedSongRVAdapter: SavedSongRVAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -60,17 +60,17 @@ class LockerSongFragment : Fragment() {
         val titleTV: TextView? = activity?.findViewById(R.id.main_miniplayer_title_tv)
         val songDB = SongDatabase.getInstance(requireContext())!!
         binding.lockerAlbumRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        lockerAlbumRVAdapter = LockerAlbumRVAdapter()
+        savedSongRVAdapter = SavedSongRVAdapter()
 
 
         var songs = songDB.songDao().getLikedSongs(true) as ArrayList<Song>
-        binding.lockerAlbumRv.adapter = lockerAlbumRVAdapter
-        lockerAlbumRVAdapter.addSongs(songs)
+        binding.lockerAlbumRv.adapter = savedSongRVAdapter
+        savedSongRVAdapter.addSongs(songs)
 
-        lockerAlbumRVAdapter.setMyItemClickListener(object :
-            LockerAlbumRVAdapter.MyItemClickListener {
+        savedSongRVAdapter.setMyItemClickListener(object :
+            SavedSongRVAdapter.MyItemClickListener {
             override fun onDeleteClick(pos: Int) {
-                lockerAlbumRVAdapter.delete(pos)
+                savedSongRVAdapter.delete(pos)
                 songDB.songDao().updateIsLikeById(false, songs[pos].id)
 
             }

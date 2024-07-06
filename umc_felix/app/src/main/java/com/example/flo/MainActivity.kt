@@ -8,9 +8,14 @@ import android.os.Bundle
 import android.util.Log
 
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.flo.database.Album
+import com.example.flo.database.Song
+import com.example.flo.database.SongDatabase
 import com.example.flo.databinding.ActivityMainBinding
 import com.example.flo.homefragment.HomeFragment
 import com.example.flo.lockerfragment.LockerFragment
+import com.example.flo.notUse.LookFragment
+import com.example.flo.notUse.SearchFragment
 import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     private var mediaPlayer: MediaPlayer? = null    //5주차
 
-    private var song:Song = Song()
+    private var song: Song = Song()
     private var gson: Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         inputDummySongs()//7주차 더미데이터 삽입
-
+        inputDummyAlbums()
 
 
         //val song = Song(binding.mainMiniplayerTitleTv.text.toString(), binding.mainMiniplayerSingerTv.text.toString(),0,60,false,"music_lilac")
@@ -59,23 +64,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SongActivity::class.java)
             startActivity(intent)
 
-            //7주차 이후로 주석처리 DB에 맞는 id로 전송해야함.
-            /*//startActivity(Intent(this, SongActivity::class.java)) 이거랑 똑같은 문장
-            val intent = Intent(this, SongActivity::class.java)
-            song.singer = binding.mainMiniplayerSingerTv.text.toString()
-            song.title = binding.mainMiniplayerTitleTv.text.toString()
-            intent.putExtra("title", song.title)
-            intent.putExtra("singer",song.singer)
-            intent.putExtra("second", song.second)//4주차 추가 데이터
-            intent.putExtra("playTime",song.playTime)//4주차 추가 데이터
-            Log.d("check",song.second.toString()+"second")
 
-            intent.putExtra("isPlaying", song.isPlaying)//4주차 추가 데이터
-            intent.putExtra("music",song.music)//5주차 노래 데이터
-            //getResult부분도 반영되게 해야할듯???
-            getResultText.launch(intent)
-            //2주차 미션예제, 임의적인 STRING_INTENT_KEY랑*/
         }
+
+
         initBottomNavigation()
 
         Log.d("song", song.singer + song.title)
@@ -178,7 +170,49 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    private fun inputDummyAlbums(){//8주차 앨범 더미데이터
+        val songDB = SongDatabase.getInstance(this)!!
+        val albums = songDB.albumDao().getAlbums()
 
+        if(albums.isNotEmpty()) return//정보가 비어있지 않다면 이미 적용된거니 종료
+
+
+        songDB.albumDao().insert(
+            Album(
+                0,
+                "IU 5th Album 'LILAC'", "아이유 (IU)", R.drawable.img_album_exp2
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                1,
+                "Butter", "방탄소년단 (BTS)", R.drawable.img_album_exp
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                2,
+                "iScreaM Vol.10 : Next Level Remixes", "에스파 (AESPA)", R.drawable.img_album_exp3
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                3,
+                "MAP OF THE SOUL : PERSONA", "방탄소년단 (BTS)", R.drawable.img_album_exp4
+            )
+        )
+
+        songDB.albumDao().insert(
+            Album(
+                4,
+                "GREAT!", "모모랜드 (MOMOLAND)", R.drawable.img_album_exp5
+            )
+        )
+
+    }
     private fun inputDummySongs(){//7주차
         val songDB = SongDatabase.getInstance(this)!!
         val songs = songDB.songDao().getSongs()

@@ -1,10 +1,15 @@
 package com.example.flo
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.flo.database.Album
+import com.example.flo.database.Like
+import com.example.flo.database.SongDatabase
 import com.example.flo.databinding.FragmentAlbumBinding
 import com.example.flo.databinding.FragmentHomeBinding
 import com.example.flo.homefragment.HomeFragment
@@ -23,6 +28,9 @@ class AlbumFragment : Fragment() {//appcompatactivity 대신 안드로이드에�
     //app:tabSelectedTextColor="#3f3fff"
     //app:tabIndicatorColor="#3f3fff" 인디케이터(밑줄)와 글자의 색깔을 바꿔줌
     //app:tabRippleColor="#00ff0000" 버튼 눌렀을때 눌리는 효과 제거 color로 들어간게 투명색임 ㅇㅇ
+
+    private var isLiked : Boolean = false
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -34,8 +42,11 @@ class AlbumFragment : Fragment() {//appcompatactivity 대신 안드로이드에�
         //////////////////////////////////////////////6주차 앨범 데이터 반영
         val albumJson = arguments?.getString("album")
         val album = gson.fromJson(albumJson, Album::class.java)
+        isLiked = isLikedAlbum(album.id)
         setInit(album)
+
         //////////////////////////////////////////////
+        setOnClickListeners(album)//8주차
 
 
         val albumAdapter = AlbumVPAdapter(this)
@@ -62,11 +73,7 @@ class AlbumFragment : Fragment() {//appcompatactivity 대신 안드로이드에�
             binding.albumAlbumIv.setImageDrawable(albumBinding.tdMsSecondAlbumImg.drawable)
 
         }
-        else if(arguments?.getString("album").equals("3")){
-            binding.albumSingerNameTv.text=albumBinding.tdMsThirdAlbumSinger.text
-            binding.albumMusicTitleTv.text=albumBinding.tdMsThirdAlbumTitle.text
-            binding.albumAlbumIv.setImageDrawable(albumBinding.tdMsThirdAlbumImg.drawable)
-        }*/
+        */
 
 
 
@@ -82,9 +89,65 @@ class AlbumFragment : Fragment() {//appcompatactivity 대신 안드로이드에�
         return albumBinding.root
     }
 
-    private fun setInit(album:Album){
+    private fun setInit(album: Album){
         binding.albumSingerNameTv.text=album.singer
         binding.albumMusicTitleTv.text=album.title
         binding.albumAlbumIv.setImageResource(album.coverImg!!)
+        if(isLiked){//8주
+            binding.albumLikeIv.setImageResource(R.drawable.ic_my_like_on)
+        }
+        else binding.albumLikeIv.setImageResource(R.drawable.ic_my_like_off)
     }
+
+    private fun getJwt(): Int{
+        val spf = activity?.getSharedPreferences("auth", AppCompatActivity.MODE_PRIVATE)
+        return spf!!.getInt("jwt", 0)
+    }
+
+    private fun likeAlbum(userId : Int, albumId: Int){
+        val songDB = SongDatabase.getInstance(requireContext())!!
+        val like = Like(userId, albumId)//liketable에 추가를 해주기 위해
+
+        songDB.albumDao().likeAlbum(like)//insert문
+
+        Log.d("MAIN_ACT/UPDATE_ALBUM",songDB.albumDao().getLikeTable().toString())
+        Log.d("MAIN_ACT/UPDATE_ALBUM",songDB.albumDao().getAlbums().toString())
+    }
+
+    private fun isLikedAlbum(albumId: Int):Boolean{
+        val songDB = SongDatabase.getInstance(requireContext())!!
+        val userId = getJwt()
+
+        val likeId = songDB.albumDao().isLikedAlbum(userId, albumId)
+        //사용자가 이 앨범을 좋아했음 album의 값이 들어갈것
+        return likeId != null
+    }
+
+    private fun disLikedAlbum(albumId: Int){
+        val songDB = SongDatabase.getInstance(requireContext())!!
+        val userId = getJwt()
+
+        val likeId = songDB.albumDao().disLikedAlbum(userId, albumId)
+        //좋아요를 취소하는 함수
+
+    }
+
+    private fun setOnClickListeners(album: Album){
+
+        val userId = getJwt()
+
+        binding.albumLikeIv.setOnClickListener {
+            if(isLiked){
+                binding.albumLikeIv.setImageResource(R.drawable.ic_my_like_off)
+                disLikedAlbum(album.id)
+
+            }else{
+                binding.albumLikeIv.setImageResource(R.drawable.ic_my_like_on)
+                likeAlbum(userId, album.id)
+            }
+
+            isLiked = !isLiked
+        }
+    }
+
 }

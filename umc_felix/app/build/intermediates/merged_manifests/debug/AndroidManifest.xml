@@ -37,6 +37,12 @@
         <activity
             android:name="com.example.flo.SongActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.flo.forLogin.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.flo.forLogin.SignUpActivity"
+            android:exported="true" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

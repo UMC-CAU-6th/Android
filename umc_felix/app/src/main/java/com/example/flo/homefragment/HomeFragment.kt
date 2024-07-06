@@ -10,10 +10,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
-import com.example.flo.Album
+import com.example.flo.database.Album
 import com.example.flo.AlbumFragment
 import com.example.flo.MainActivity
 import com.example.flo.R
+import com.example.flo.database.SongDatabase
 import com.example.flo.databinding.FragmentHomeBinding
 import com.google.gson.Gson
 import java.util.Timer
@@ -28,6 +29,8 @@ class HomeFragment : Fragment() {
 
     private var albumDatas = ArrayList<Album>()
 
+    private lateinit var songDB : SongDatabase
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,14 +40,19 @@ class HomeFragment : Fragment() {
         val singerTV: TextView? = activity?.findViewById(R.id.main_miniplayer_singer_tv)
         val titleTV: TextView? = activity?.findViewById(R.id.main_miniplayer_title_tv)
         //////////////////////////////////////////////////////6주차 데이터 어댑터 설정
-        albumDatas.apply{
+        /*albumDatas.apply{//8주차 이후로 주석
             add(Album("Lilac", "아이유",R.drawable.lilac))
             add(Album("앨범1", "가수1",R.drawable.img_album_exp))
             add(Album("앨범2", "가수2",R.drawable.img_album_exp3))
             add(Album("앨범3", "가수3",R.drawable.img_album_exp4))
 
-        }
+        }*/
         //원래는 데이터 서버에서 받아와야함
+
+        songDB = SongDatabase.getInstance(requireContext())!!
+        albumDatas.addAll(songDB.albumDao().getAlbums())
+
+
         val albumRVAdapter = AlbumRVAdapter(albumDatas)
         binding.homeTodayMusicAlbumRv.adapter = albumRVAdapter
         binding.homeTodayMusicAlbumRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
@@ -94,7 +102,7 @@ class HomeFragment : Fragment() {
 
         startAutoSlide(pannelBGAdapter)
         ////////////////////////////////////////////////////////////////////
-        fun touchAlbum(album: String){//앨범 클릭 함수
+        /*fun touchAlbum(album: String){//앨범 클릭 함수
             val fragment2 = AlbumFragment()
             val bundle = Bundle()
             bundle.putString("album", album)
@@ -105,7 +113,7 @@ class HomeFragment : Fragment() {
             replace(R.id.main_frm,fragment2).commit()
             //R.id.main_frm은 activity_main 안에 있는 프레임 레이아웃임
             //이때 replace는 framelayout 안에 있는 fragment를 변경해준다는 뜻
-        }
+        }*/
         //6주차 이후로 주석, 앨범이 recyclerView로 대체됨
         /*binding.tdMsFirstLl.setOnClickListener{
             touchAlbum("1")
